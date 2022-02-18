@@ -74,7 +74,7 @@ class Program
                 string[] splittedDir = dir.Split("\\");
                 string dirName = splittedDir[^1];
 
-                if (dirName.Equals(id))
+                if (dirName.Contains(id))
                 {
                     string[] files = Directory.GetFiles(dir);
 
